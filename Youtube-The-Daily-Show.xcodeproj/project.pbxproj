@@ -15,6 +15,7 @@
 		EE3488762484189F004885E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3488742484189F004885E6 /* LaunchScreen.storyboard */; };
 		EE34887E24859699004885E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34887D24859699004885E6 /* Constants.swift */; };
 		EE348880248599EB004885E6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34887F248599EB004885E6 /* Video.swift */; };
+		EE34888224859C11004885E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34888124859C11004885E6 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EE3488772484189F004885E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE34887D24859699004885E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE34887F248599EB004885E6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		EE34888124859C11004885E6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +65,13 @@
 				EE34886924841893004885E6 /* AppDelegate.swift */,
 				EE34886B24841893004885E6 /* SceneDelegate.swift */,
 				EE34886D24841893004885E6 /* ViewController.swift */,
-				EE34887D24859699004885E6 /* Constants.swift */,
 				EE34886F24841893004885E6 /* Main.storyboard */,
 				EE3488722484189F004885E6 /* Assets.xcassets */,
 				EE3488742484189F004885E6 /* LaunchScreen.storyboard */,
 				EE3488772484189F004885E6 /* Info.plist */,
+				EE34887D24859699004885E6 /* Constants.swift */,
 				EE34887F248599EB004885E6 /* Video.swift */,
+				EE34888124859C11004885E6 /* Model.swift */,
 			);
 			path = "Youtube-The-Daily-Show";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				EE34886E24841893004885E6 /* ViewController.swift in Sources */,
 				EE34886A24841893004885E6 /* AppDelegate.swift in Sources */,
 				EE34886C24841893004885E6 /* SceneDelegate.swift in Sources */,
+				EE34888224859C11004885E6 /* Model.swift in Sources */,
 				EE34887E24859699004885E6 /* Constants.swift in Sources */,
 				EE348880248599EB004885E6 /* Video.swift in Sources */,
 			);
