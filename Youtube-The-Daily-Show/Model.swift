@@ -29,12 +29,11 @@ class Model {
             if error != nil || data != nil {
                 return
             }
-            
+            // here the data will be parsed into different object
             
         }
         // Start the task
         
         dataTask.resume()
-   
     }
 }
