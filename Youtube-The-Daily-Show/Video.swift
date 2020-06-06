@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Video {
+struct Video: Decodable {
     
     var videoId = ""
     var title = ""
@@ -18,7 +18,6 @@ struct Video {
     
     
     enum CodingKeys : String, CodingKey {
-        
         case snippet
         case thumbnails
         case high
@@ -35,7 +34,7 @@ struct Video {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        let snippetContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .snippet)
+        let snippetContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .snippet)  //used for a nested container
         
         // parse title
             self.title = try snippetContainer.decode(String.self, forKey: .title)
@@ -57,6 +56,5 @@ struct Video {
         let resourceIdContainer = try snippetContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .resourceId)
         
             self.videoId = try resourceIdContainer.decode(String.self, forKey: .videoId)
-        
     }
 }

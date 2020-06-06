@@ -16,6 +16,7 @@
 		EE34887E24859699004885E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34887D24859699004885E6 /* Constants.swift */; };
 		EE348880248599EB004885E6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34887F248599EB004885E6 /* Video.swift */; };
 		EE34888224859C11004885E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE34888124859C11004885E6 /* Model.swift */; };
+		EE348884248AC659004885E6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE348883248AC659004885E6 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EE34887D24859699004885E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE34887F248599EB004885E6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		EE34888124859C11004885E6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EE348883248AC659004885E6 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				EE3488772484189F004885E6 /* Info.plist */,
 				EE34887D24859699004885E6 /* Constants.swift */,
 				EE34887F248599EB004885E6 /* Video.swift */,
+				EE348883248AC659004885E6 /* Response.swift */,
 				EE34888124859C11004885E6 /* Model.swift */,
 			);
 			path = "Youtube-The-Daily-Show";
@@ -153,6 +156,7 @@
 				EE34888224859C11004885E6 /* Model.swift in Sources */,
 				EE34887E24859699004885E6 /* Constants.swift in Sources */,
 				EE348880248599EB004885E6 /* Video.swift in Sources */,
+				EE348884248AC659004885E6 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
