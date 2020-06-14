@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModelDelegate {
     
     @IBOutlet var tableView: UITableView!
     
@@ -22,9 +22,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         
+        //set itself as the delegate of the model
+        model.delegate = self
         
         model.getVideos() 
     }
+    
+    //MARK: - Model Delegate methods
+    
+    func videosFetched(_ videos: [Video]) {
+        
+        //Set the videos which will be returned to the video property
+        self.videos = videos
+        
+        //Refresh the tableview
+        tableView.reloadData()
+    }
+    
     //MARK: - TableView methods
     
     
@@ -40,14 +54,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //Configure the cell with the data
         
         
+        //Get the title for the video in question
+        let title = self.videos[indexPath.row].title
+        
+        cell.textLabel?.text = title
+        
+        
         //Return the cell for tableView for displaying
         return cell
-        
         
      }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+
     }
 }
 
