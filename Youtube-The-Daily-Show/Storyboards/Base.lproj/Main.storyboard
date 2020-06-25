@@ -19,17 +19,17 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IdentifierVideoCell" id="ucR-CI-Oat">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" id="ucR-CI-Oat" customClass="VideoTableViewCell" customModule="Youtube_The_Daily_Show" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="303"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ucR-CI-Oat" id="Ho8-yY-Bhp" customClass="VideoTableViewCell" customModule="Youtube_The_Daily_Show" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ucR-CI-Oat" id="Ho8-yY-Bhp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OnX-OD-x97">
                                                     <rect key="frame" x="10" y="10" width="394" height="283"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="91Y-h4-5km">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="91Y-h4-5km">
                                                             <rect key="frame" x="0.0" y="0.0" width="394" height="221.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="91Y-h4-5km" secondAttribute="height" multiplier="1280:720" id="DJp-aI-Cfx"/>
@@ -58,12 +58,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="OnX-OD-x97" secondAttribute="trailing" constant="10" id="xjk-TC-LBt"/>
                                                 <constraint firstItem="OnX-OD-x97" firstAttribute="top" secondItem="Ho8-yY-Bhp" secondAttribute="top" constant="10" id="zp1-j6-zWl"/>
                                             </constraints>
-                                            <connections>
-                                                <outlet property="dateLabel" destination="gRS-Lb-cE6" id="vZO-2G-EDz"/>
-                                                <outlet property="thumbnailImageView" destination="91Y-h4-5km" id="SNc-9O-IzW"/>
-                                                <outlet property="titleLabel" destination="p95-mk-R8x" id="VTe-ky-kZr"/>
-                                            </connections>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="gRS-Lb-cE6" id="KrA-iC-vYE"/>
+                                            <outlet property="thumbnailImageView" destination="91Y-h4-5km" id="ZGW-dX-I8U"/>
+                                            <outlet property="titleLabel" destination="p95-mk-R8x" id="LGm-py-QMc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

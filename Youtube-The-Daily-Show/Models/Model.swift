@@ -32,9 +32,10 @@ class Model {
         let dataTask = session.dataTask(with: url!) { (data, response, error) in
             
             // check for any errors
-            if error != nil || data == nil {
+            if error != nil &&  data == nil {
                 return
             }
+            
             
             do {
                 // parsing the data into a video object

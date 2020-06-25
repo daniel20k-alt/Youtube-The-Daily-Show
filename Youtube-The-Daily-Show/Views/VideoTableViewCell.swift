@@ -9,14 +9,15 @@
 import UIKit
 
 class VideoTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var dateLabel: UILabel!
     
-    var video:Video?
+    
+    var video: Video?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,7 +47,7 @@ class VideoTableViewCell: UITableViewCell {
         self.dateLabel.text = df.string(from: video!.published)
         
         //setting the thumbnail - verifying if not nil
-        guard self.video!.thumbnail != nil else {
+        guard self.video!.thumbnail != "" else {
             return
         }
         
@@ -59,7 +60,7 @@ class VideoTableViewCell: UITableViewCell {
         //create a data task
         let dataTask = session.dataTask(with: url!) { (data, response, error) in
         
-            if error != nil && data != nil {
+            if error == nil && data != nil {
                 
                 //check if the cells were recycled properly and display the correct image
                 if url!.absoluteString != self.video?.thumbnail {
