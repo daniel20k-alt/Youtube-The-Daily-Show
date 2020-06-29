@@ -21,6 +21,7 @@
 		EE3488AE249BD0FC004885E6 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3488AD249BD0FC004885E6 /* VideoTableViewCell.swift */; };
 		EEF7A2EB24A4CD6E00309703 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A2EA24A4CD6E00309703 /* CacheManager.swift */; };
 		EEF7A2ED24AA152300309703 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A2EC24AA152300309703 /* DetailViewController.swift */; };
+		EEF7A2F024AA849A00309703 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF7A2EF24AA849A00309703 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EE3488AD249BD0FC004885E6 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		EEF7A2EA24A4CD6E00309703 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		EEF7A2EC24AA152300309703 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EEF7A2EF24AA849A00309703 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF7A2F024AA849A00309703 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				EE34886824841893004885E6 /* Youtube-The-Daily-Show */,
 				EE34886724841893004885E6 /* Products */,
+				EEF7A2EE24AA849900309703 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 				EEF7A2EC24AA152300309703 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EEF7A2EE24AA849900309703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF7A2EF24AA849A00309703 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
