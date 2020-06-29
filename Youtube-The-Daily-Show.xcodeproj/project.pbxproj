@@ -20,6 +20,7 @@
 		EE3488AC249604CA004885E6 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3488AB249604CA004885E6 /* ConstantsTemplate.swift */; };
 		EE3488AE249BD0FC004885E6 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3488AD249BD0FC004885E6 /* VideoTableViewCell.swift */; };
 		EEF7A2EB24A4CD6E00309703 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A2EA24A4CD6E00309703 /* CacheManager.swift */; };
+		EEF7A2ED24AA152300309703 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A2EC24AA152300309703 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EE3488AB249604CA004885E6 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 		EE3488AD249BD0FC004885E6 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		EEF7A2EA24A4CD6E00309703 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		EEF7A2EC24AA152300309703 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				EE34886D24841893004885E6 /* ViewController.swift */,
+				EEF7A2EC24AA152300309703 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF7A2ED24AA152300309703 /* DetailViewController.swift in Sources */,
 				EE34886E24841893004885E6 /* ViewController.swift in Sources */,
 				EE34886A24841893004885E6 /* AppDelegate.swift in Sources */,
 				EE34886C24841893004885E6 /* SceneDelegate.swift in Sources */,
