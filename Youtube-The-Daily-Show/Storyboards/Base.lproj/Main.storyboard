@@ -17,9 +17,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IRt-cN-329">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" id="ucR-CI-Oat" customClass="VideoTableViewCell" customModule="Youtube_The_Daily_Show" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoCell" id="ucR-CI-Oat" customClass="VideoTableViewCell" customModule="Youtube_The_Daily_Show" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="303"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ucR-CI-Oat" id="Ho8-yY-Bhp">
@@ -59,6 +59,7 @@
                                                 <constraint firstItem="OnX-OD-x97" firstAttribute="top" secondItem="Ho8-yY-Bhp" secondAttribute="top" constant="10" id="zp1-j6-zWl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="gRS-Lb-cE6" id="KrA-iC-vYE"/>
                                             <outlet property="thumbnailImageView" destination="91Y-h4-5km" id="ZGW-dX-I8U"/>
@@ -69,7 +70,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IRt-cN-329" secondAttribute="bottom" id="KGd-Ma-HzK"/>
                             <constraint firstItem="IRt-cN-329" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="duz-20-iYa"/>
