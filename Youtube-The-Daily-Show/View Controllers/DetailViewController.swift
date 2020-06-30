@@ -43,6 +43,12 @@ class DetailViewController: UIViewController {
         }
         
         //Create the embed URL
+        let embedUrlString = Constants.YT_EMBED_URL + video!.videoId
+        
+        //Loading video into the webView
+        let url = URL(string: embedUrlString)
+        let request = URLRequest(url: url!)
+        webView.load(request)
         
         //Setting the title and the date label
         self.titleLabel.text = video?.title
